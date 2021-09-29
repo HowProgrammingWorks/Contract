@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const max = (a, b) => {
+const compare = (a, b) => {
   assert(typeof a === 'number');
   assert(typeof b === 'number');
   const result = a > b;
@@ -11,11 +11,11 @@ const max = (a, b) => {
 };
 
 {
-  const result = max(7, 5);
+  const result = compare(7, 5);
   console.log({ result });
 }
 
 {
-  const result = max(7, '5');
+  const result = compare(7, '5');
   console.log({ result });
 }
