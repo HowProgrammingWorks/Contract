@@ -4,11 +4,7 @@
   parameters: {
     name: 'string',
     age: { type: 'number', min: 16 },
-    address: {
-      city: 'string',
-      street: '?string',
-      building: '?number',
-    },
+    address: 'Address',
   },
 
   method: async ({ name, age, address }) => {

@@ -3,7 +3,7 @@
 ({
   parameters: {
     a: 'number',
-    b: 'number',
+    b: 'Account',
   },
 
   method: async ({ a, b }) => {
@@ -12,8 +12,15 @@
   },
 
   returns: 'boolean',
+
+  errors: {
+  }
 });
 
-// front
+// client
 
-const res = await api.example.compare({ a: 1, b: 2 });
+try {
+  const res = await api.example.compare({ a: 1, b: 2 });
+} catch (err) {
+  
+}
